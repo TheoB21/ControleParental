@@ -1,0 +1,45 @@
+- les differents comptes utilisateur de l'ordinateur peuvent intéragir entre eux ?
+    
+    a) oui alors ??? (pas la moindre idée de comment faire)
+    b) non donc empecher création d'autres utilisateur à partir d'un compte standard sauf si option désactiver par l'admin
+
+    option b la plus simple à gérer
+
+- empecher l'utilisateur d'avoir les droit d'admin sur le pc 
+
+- rendre les fichiers de stockage inaccessible/non modifiable/non lisible sans les droits administrateurs
+
+- creation d'un accès admin sur le compte utilisateur pour pouvoir brider le pc 
+    (si cela est possible)
+
+- si existe deja différentes session definir la session actuel comme utilisateur et donc 
+brider celle ci ou alors créer nouvelle session voir le plus simple
+
+- creation du couplet nom/mdp pour accéder à l'application avec mdp stock sous forme de hash
+
+- definition des restrictions (stocker dans un fichier):
+
+    1) limite de temps
+        a) si plusieur connection, stocker toute les heures de connection/deconnection dans un fichier 
+        b) calculer le temps à partir du point précedents + un compteur en mémoire vive à partir de la dérnière connection
+        c) à chaque connection notifier cb temps disponible, 15 et 5 minutes avant fin du temps popup pour dire que la session va expirer
+    
+    2) key logger (lors de navigation internet ou tout le temps ???)
+        a.1) utilisation de différente biblio de mot ban classés dans différentes catégorie séléctionable par administrateurs
+        ou
+        a.2) gestion par l'admin des mots ban
+        /!\ a.2 dangeureux car navigateur comprend por no ou encore p o r n o et aussi p.o.r.n.o (j'ai testé)
+
+        b) controler le résultat des ctrl+c/ctrl+v 
+    
+    3) interdiction à certaine adresse ip (donc controle du trafic internet) 
+        /!\ differents pb comme les proxys 
+
+    4) a définir
+
+- empecher la fermeture forcé de l'app (géstionaire des tache inaccessible sauf option désactiver par admin)
+
+- empecher acces invite de commande
+
+        
+
